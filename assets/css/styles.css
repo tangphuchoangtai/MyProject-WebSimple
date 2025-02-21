@@ -39,15 +39,19 @@ a {
 .btn:hover {
   opacity: 0.9;
 }
-/* đang bị lỗi không hiểu sao ko hổ trợ để làm ko tràng nội dung từ featured ra
-/* .line-clamp {
+.break-all {
+  word-break: break-all;
+}
+.line-clamp {
   display: -webkit-box;
-  -webkit-line-clamp: var(--line-clamp, 2);
-  line-clamp: 2;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  line-clamp: var(--line-clamp, 1);
   -webkit-box-orient: vertical;
   overflow: hidden;
-} */
-
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
 /*-------- Header ------*/
 .fixed-header {
   /*-------- fix để navbar có thể kéo xuống mà vẫn đi theo ------*/
@@ -211,7 +215,7 @@ a {
   text-align: center;
 }
 .guide-item .title {
-  margin-top: 26px;
+  margin-top: 27px;
   font-weight: 500;
   font-size: 2rem;
   line-height: 1.1;
